@@ -2,10 +2,12 @@ from django.http import HttpResponseNotFound
 from django.shortcuts import render
 from django.views import View
 
+import tours.data as data
+
 
 class MainView(View):
     def get(self, request):
-        return render(request, 'tours/index.html')
+        return render(request, 'tours/index.html', context={'title': data.title})
 
 
 class DepartureView(View):

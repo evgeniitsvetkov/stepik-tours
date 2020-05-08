@@ -2,8 +2,8 @@
 
 {% block content %}
 
-    <h1 class="display-5 mt-4">Летим из <span data-test="from">{{ departure }}</span></h1>
-    <p class="mb-4" >Найдено <span data-test="tourcount">15</span> туров, от <span data-test="pricemin">26000</span> до <span data-test="pricemax">84600</span> и от <span data-test="nightsmax">4</span> ночей до <span data-test="nightsmax">15</span> ночей</p>
+    <h1 class="display-5 mt-4">Летим <span data-test="from">{{ departure_title }}</span></h1>
+    <p class="mb-4" >Найдено <span data-test="tourcount">{{ tours_count }}</span> туров, от <span data-test="pricemin">{{ min_price_tour }}</span> до <span data-test="pricemax">{{ max_price_tour }}</span> и от <span data-test="nightsmax">{{ min_nights_tour }}</span> ночей до <span data-test="nightsmax">{{ max_nights_tour }}</span> ночей</p>
     <!-- HERO -->
 
 
